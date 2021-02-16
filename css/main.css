@@ -86,9 +86,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@font-face {
+    font-family: 'basier_circlebold';
+    src: url('../fonts/basiercircle-bold-webfont.woff2') format('woff2'),
+         url('../fonts/basiercircle-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 body {
   color: white;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 100%;
 }
 
@@ -97,6 +107,22 @@ header {
   justify-content: center;
   margin-top: 10px;
 }
+
+header h1 {
+  font-family: 'basier_circlebold', 'sans-serif';
+  font-size: 40px;
+  margin: 0;
+}
+
+header h1 a { 
+  text-decoration: none;
+  color: #191C1F;
+  transition: all 0.4s;
+}
+
+header h1 a:hover {
+  color: #086AC7;
+ }
 
 main {
   display: flex;
@@ -129,15 +155,15 @@ strong {
   color: #191C1F;
 }
 
-section.infos h1 span { 
+section.infos h2 span { 
   color: #8B959E;
 }
 
-section.infos h1 {
+section.infos h2 {
   font-size: 48px;
-  font-weight: 500;
   margin-bottom: 10px;
   color: #191C1F;
+  font-family: 'basier_circlebold';
 }
 
 section.infos p {
@@ -214,6 +240,7 @@ form button[type="submit"]:hover {
   section.infos {
     order: 1;
     margin-bottom: 50px;
+    margin-right: 0;
   }
 
   main {
@@ -223,6 +250,7 @@ form button[type="submit"]:hover {
   form input[type="email"] {
     width: 100%;
     margin-bottom: 20px;
+    padding-right: 0;
   }
 
   form button[type="submit"] {
@@ -266,7 +294,6 @@ form button[type="submit"]:hover {
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  /* 1 */
 }
 
 /*
