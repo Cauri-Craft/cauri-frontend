@@ -173,6 +173,10 @@ section.infos p {
   color: #8B959E;
 }
 
+section.cards {
+  max-width: 500px;
+}
+
 form { 
   width: 100%;
 }
@@ -224,12 +228,13 @@ form button[type="submit"]:hover {
 
   section.cards {
     order: 0;
-    width: 80%;
+    width: 100%;
   }
 
-  section.infos h1 {
+  section.infos h2 {
     /* font-size: 4em; */
     font-weight: 400;
+    margin-top: 0;
   }
 
   section.infos p {
