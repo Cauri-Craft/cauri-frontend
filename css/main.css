@@ -87,21 +87,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-  background: #0e223d;
   color: white;
   font-family: 'Rubik', sans-serif;
   height: 100%;
-}
-
-.blur-bg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url("../img/blur-bg.png") no-repeat;
-  filter: blur(90px);
-  -webkit-filter: blur(90px);
 }
 
 header {
@@ -132,21 +120,31 @@ section p img {
   object-fit: cover;
 }
 
+section.infos { 
+  margin-right: 50px;
+}
+
 section.infos span,
 strong {
-  color: #8A9CAE;
+  color: #191C1F;
+}
+
+section.infos h1 span { 
+  color: #8B959E;
 }
 
 section.infos h1 {
-  font-size: 5em;
+  font-size: 48px;
   font-weight: 500;
   margin-bottom: 10px;
+  color: #191C1F;
 }
 
 section.infos p {
-  font-size: 2.25em;
+  font-size: 24px;
   font-weight: 300;
   margin-top: 0;
+  color: #8B959E;
 }
 
 form { 
@@ -158,26 +156,29 @@ form input[type="email"] {
   background: none;
   border: none;
   padding: 0 10px 0 0;
-  border-bottom: 1px solid #8A9CAE;
-  color: white;
+  border-bottom: 1px solid #2A69A6;
+  color: #191C1F;
   font-size: 24px;
-  width: calc(100% - 200px - 40px);
+  width: calc(100% - 150px - 40px);
   margin-right: 20px;
   transition: all 0.4s;
 }
 
 form input[type="email"]:focus {
   outline: none;
-  border-bottom-color: #0585FF;
+  border-bottom-color: #2A69A6;
+}
+
+form input[type="email"]::placeholder {
+  color: #8B959E;
 }
 
 form button[type="submit"] {
-  height: 50px;
-  background: #0585FF;
+  height: 56px;
+  background: #191C1F;
   border: none;
-  border-radius: 4px;
-  padding: 0 40px;
-  width: 200px;
+  border-radius: 12px;
+  width: 156px;
   color: white;
   cursor: pointer;
   transition: all 0.4s;
@@ -189,7 +190,6 @@ form button[type="submit"]:hover {
 
 
 @media only screen and (max-width: 600px) {
-
   /* Style adjustments for viewports that meet the condition */
   .container {
     flex-direction: column;
@@ -202,12 +202,12 @@ form button[type="submit"]:hover {
   }
 
   section.infos h1 {
-    font-size: 4em;
+    /* font-size: 4em; */
     font-weight: 400;
   }
 
   section.infos p {
-    font-size: 1.6em;
+    /* font-size: 1.6em; */
     font-weight: 300;
   }
 
