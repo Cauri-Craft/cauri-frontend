@@ -167,7 +167,7 @@ section.infos h2 {
 }
 
 section.infos p {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
   margin-top: 0;
   color: #8B959E;
@@ -177,33 +177,7 @@ section.cards {
   max-width: 500px;
 }
 
-form { 
-  width: 100%;
-}
-
-form input[type="email"] {
-  height: 50px;
-  background: none;
-  border: none;
-  padding: 0 10px 0 0;
-  border-bottom: 1px solid #2A69A6;
-  color: #191C1F;
-  font-size: 24px;
-  width: calc(100% - 150px - 40px);
-  margin-right: 20px;
-  transition: all 0.4s;
-}
-
-form input[type="email"]:focus {
-  outline: none;
-  border-bottom-color: #2A69A6;
-}
-
-form input[type="email"]::placeholder {
-  color: #8B959E;
-}
-
-form button[type="submit"] {
+a button {
   height: 56px;
   background: #191C1F;
   border: none;
@@ -214,13 +188,16 @@ form button[type="submit"] {
   transition: all 0.4s;
 }
 
-form button[type="submit"]:hover {
+.mobile-only {
+  display: none;
+}
+
+a button:hover {
   background: #086AC7;
 }
 
 
 @media only screen and (max-width: 600px) {
-  /* Style adjustments for viewports that meet the condition */
   .container {
     flex-direction: column;
     text-align: center;
@@ -232,13 +209,11 @@ form button[type="submit"]:hover {
   }
 
   section.infos h2 {
-    /* font-size: 4em; */
     font-weight: 400;
     margin-top: 0;
   }
 
   section.infos p {
-    /* font-size: 1.6em; */
     font-weight: 300;
   }
 
@@ -251,20 +226,7 @@ form button[type="submit"]:hover {
   main {
     display: inherit;
   }
-
-  form input[type="email"] {
-    width: 100%;
-    margin-bottom: 20px;
-    padding-right: 0;
-  }
-
-  form button[type="submit"] {
-    width: 100%;
-  }
 }
-
-
-
 
 
 /* ==========================================================================
