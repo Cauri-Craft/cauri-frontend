@@ -171,6 +171,7 @@ section.infos p {
   font-weight: 300;
   margin-top: 0;
   color: #8B959E;
+  line-height: 160%;
 }
 
 section.cards {
@@ -203,6 +204,10 @@ a button:hover {
     text-align: center;
   }
 
+  section.infos h2 {
+    font-size: 36px;
+  }
+
   section.cards {
     order: 0;
     width: 100%;
@@ -211,10 +216,13 @@ a button:hover {
   section.infos h2 {
     font-weight: 400;
     margin-top: 0;
+    margin-bottom: 20px;
   }
 
   section.infos p {
     font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 160%;
   }
 
   section.infos {
